@@ -96,6 +96,7 @@
   display: flex;
 }
 .nav.list-item {
+  position: relative;
   margin-right: 50px;
 }
 
@@ -118,6 +119,17 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.current-page::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 .contact-list {
   display: flex;
@@ -257,6 +269,7 @@
   display: flex;
 }
 .work-item {
+  position: relative;
   margin-right: 30px;
 }
 .work-item:last-child {
@@ -270,10 +283,29 @@
   line-height: 1.17;
   text-align: center;
 }
+
 .work-card {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.work-action {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-bg);
 }
 
 /*-----section work----- */
