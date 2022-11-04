@@ -241,6 +241,13 @@
   border-radius: 4px;
 }
 .modal-close {
+  /* background-color: #ffffff; */
+  /* stroke: none;
+  border: none; */
+}
+.modal-close {
+  stroke: none;
+  border: none;
 }
 
 /*----- section hero----- */
